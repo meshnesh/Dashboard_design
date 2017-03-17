@@ -81,4 +81,53 @@ body {
     padding-bottom: 13px;
     color: #aeb2b7;
 }
+/*Plus animation*/
+.page {
+    margin-right: 5vh;
+}
 
+.container {
+    margin: 0 auto;
+    float: right;
+    position: relative;
+    cursor: pointer;
+}
+
+.bar {
+    position: absolute;
+    height: 1px;
+    width: 12px;
+    background-color: black;
+}
+
+.bar--horizontal {
+     	transform: rotate(90deg)
+}
+
+@keyframes plus {
+    /*   0% {
+        transform: rotate(0deg);
+      } */
+    100% {
+        transform: rotate(450deg);
+    }
+}
+
+@keyframes minus {
+    /*   0% {
+        transform: rotate(450deg);
+      } */
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.plus {
+    animation: plus 0.5s ease;
+    animation-fill-mode: forwards;
+}
+
+.minus {
+    animation: minus 0.5s ease;
+    animation-fill-mode: forwards;
+}
