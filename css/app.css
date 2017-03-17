@@ -1,133 +1,93 @@
-@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
-@import url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css');
+* {
+    box-sizing: border-box;
+}
+
+html,
 body {
-    color: #5D5F63;
-    background: #293949;
-    font-family: 'Open Sans', sans-serif;
-    padding: 0;
-    margin: 0;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
 }
-.sidebar-toggle {
-    margin-left: -240px;
-}
-.sidebar {
-    width: 240px;
-    height: 100%;
-    background: #293949;
-    position: absolute;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    z-index: 100;
-}
-.sidebar #leftside-navigation ul,
-.sidebar #leftside-navigation ul ul {
-    margin: -2px 0 0;
-    padding: 0;
-}
-.sidebar #leftside-navigation ul li {
-    list-style-type: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
-.sidebar #leftside-navigation ul li.active > a {
-    color: #1abc9c;
-}
-.sidebar #leftside-navigation ul li.active ul {
-    display: block;
-}
-.sidebar #leftside-navigation ul li a {
-    color: #aeb2b7;
-    text-decoration: none;
-    display: block;
-    padding: 18px 0 18px 25px;
-    font-size: 12px;
-    outline: 0;
-    -webkit-transition: all 200ms ease-in;
-    -moz-transition: all 200ms ease-in;
-    -o-transition: all 200ms ease-in;
-    -ms-transition: all 200ms ease-in;
-    transition: all 200ms ease-in;
-}
-.sidebar #leftside-navigation ul li a:hover {
-    color: #1abc9c;
-}
-.sidebar #leftside-navigation ul li a span {
-    display: inline-block;
-}
-.sidebar #leftside-navigation ul li a i {
-    width: 20px;
-}
-.sidebar #leftside-navigation ul li a i .fa-angle-left,
-.sidebar #leftside-navigation ul li a i .fa-angle-right {
-    padding-top: 3px;
-}
-.sidebar #leftside-navigation ul ul {
-    display: none;
-}
-.sidebar #leftside-navigation ul ul li {
-    background: #23313f;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-    border-bottom: none;
-}
-.sidebar #leftside-navigation ul ul li a {
-    font-size: 12px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    color: #aeb2b7;
-}
-/*Plus animation*/
-.page {
-    margin-right: 5vh;
+
+.top-bar {
+    position: relative;
+    height: 50px;
+    padding: 15px 20px;
 }
 
 .container {
-    margin: 0 auto;
-    float: right;
     position: relative;
-    cursor: pointer;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    background: #ddd;
+}
+.container.-expanded > .sidebar {
+    margin-left: 0;
+}
+.container.-expanded > .content {
+    width: calc(100% - 250px);
+}
+.container.-collapsed > .sidebar {
+    margin-left: -250px;
+}
+.container.-collapsed > .content {
+    width: 100%;
+}
+.container > .sidebar,
+.container > .content {
+    float: left;
+    -webkit-transition: all 0.24s cubic-bezier(1, 0.335, 0.89, 0.825);
+    transition: all 0.24s cubic-bezier(1, 0.335, 0.89, 0.825);
+}
+.container > .sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #0094ff;
+}
+.container > .content {
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+}
+.container > .content .heading {
+    margin: 0;
+    line-height: 1;
+    font-weight: 300;
 }
 
-.bar {
-    position: absolute;
-    height: 1px;
-    width: 12px;
-    background-color: black;
+.btn {
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    font-family: 'Montserrat', 'Source Sans Pro', sans-serif;
+    padding: 0 20px;
+    color: #505057;
+    background: #eee;
+    border: 0;
+    border-radius: 3px;
+}
+.btn:hover {
+    background: #e1e1e1;
+}
+.btn.-top {
+    margin-top: -6px;
+}
+.btn.-info {
+    color: #fff;
+    background: #0094ff;
+}
+.btn.-info:hover {
+    background: #0085e6;
 }
 
-.bar--horizontal {
-     	transform: rotate(90deg)
+.clearfix:after {
+    clear: both;
+}
+.clearfix .p-left {
+    float: left;
+}
+.clearfix .p-right {
+    float: right;
 }
 
-@keyframes plus {
-    /*   0% {
-        transform: rotate(0deg);
-      } */
-    100% {
-        transform: rotate(450deg);
-    }
-}
-
-@keyframes minus {
-    /*   0% {
-        transform: rotate(450deg);
-      } */
-    100% {
-        transform: rotate(-360deg);
-    }
-}
-
-.plus {
-    animation: plus 0.5s ease;
-    animation-fill-mode: forwards;
-}
-
-.minus {
-    animation: minus 0.5s ease;
-    animation-fill-mode: forwards;
-}

@@ -1,18 +1,26 @@
-$("#leftside-navigation .sub-menu > a").click(function(e) {
-    $("#leftside-navigation ul ul").slideUp(), $(this).next().is(":visible") || $(this).next().slideDown(),
-        e.stopPropagation()
+var $container = document.querySelector('.js-container');
+var $expand = document.querySelector('.js-sidebar-expand');
+
+$expand.addEventListener('click', function(evt) {
+    toggleClass($container, ['-collapsed', '-expanded']);
 });
 
-/*Plus animation*/
-var container = document.querySelector('.container');
-var bar = document.querySelector('.bar--horizontal');
-
-container.addEventListener('click', function() {
-    if (bar.classList.contains('plus')) {
-        bar.classList.remove('plus')
-        bar.classList.add('minus')
+function toggleClass(el, className) {
+    if ( Array.isArray(className) ) {
+        className.map(function(c) {
+            toggleClass(el, c);
+        });
     } else {
-        bar.classList.remove('minus')
-        bar.classList.add('plus')
+        var classNames = el.className.split(' ');
+        var index;
+
+        el.className = (index = classNames.indexOf(className)) === -1
+            ? classNames.join(' ') + ' ' + className
+            : splice(classNames, index, 1).join(' ');
     }
-});
+}
+
+function splice(arr, index, count) {
+    arr.splice(index, count);
+    return arr;
+}
