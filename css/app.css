@@ -48,7 +48,6 @@ body {
 .container > .content {
     width: 100%;
     min-height: 100vh;
-    padding: 10px;
 }
 .container > .content .heading {
     margin: 0;
