@@ -253,13 +253,13 @@ h1{
 .mapImg{
     float: left;
     margin-left: 56px;
-    box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.16), 0 0px 1px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.16), 0 0 1px 0 rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
 .graphImg{
     float: right;
     margin-right: 56px;
-    box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.16), 0 0px 1px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.16), 0 0 1px 0 rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
 h3{
@@ -271,7 +271,7 @@ h3{
     margin-top: 32px;
     padding: 24px 24px 32px;
     margin-bottom: 40px;
-    box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.16), 0 0px 1px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.16), 0 0 1px 0 rgba(0, 0, 0, 0.12);
     color: #31383e;
     font-weight: 300;
     border-radius: 4px;
@@ -289,7 +289,7 @@ h3{
 .Ndtwo{
      color: transparent;
  }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 360px) {
     .container > .sidebar {
         width: 100%;
         height: auto;
@@ -309,7 +309,7 @@ h3{
     }
     .container.-expanded > .content {
         width: 100%;
-        margin-top: 80vh;
+        margin-top: 54vh;
     }
     .btn.-info {
         color: #fff;
@@ -347,4 +347,11 @@ h3{
         width: 100%;
         margin-bottom: 16px;
     }
+}
+@media only screen and (max-width: 320px) {
+    .container.-expanded > .content {
+        width: 100%;
+        margin-top: 80vh;
+    }
+
 }
