@@ -14,14 +14,14 @@ body {
 }
 
 .top-bar {
-    position: relative;
-    height: 40px;
-    padding: 15px 20px;
+    /*position: relative;*/
+    height: 41px;
+    padding: 15px 16px;
     background-color: #fefefe;
 }
 
 .container {
-    position: relative;
+    /*position: relative;*/
     height: 100vh;
     width: 100%;
     overflow-x: hidden;
@@ -34,7 +34,7 @@ body {
     width: calc(100% - 250px);
 }
 .container.-collapsed > .sidebar {
-    margin-left: -250px;
+    margin-left: -520px;
 }
 .container.-collapsed > .content {
     width: 100%;
@@ -46,12 +46,12 @@ body {
     transition: all 0.24s cubic-bezier(1, 0.335, 0.89, 0.825);
 }
 .container > .sidebar {
-    width: 250px;
+    width: 20%;
     height: 100vh;
     background: #0094ff;
 }
 .container > .content {
-    width: 100%;
+    width: 80%;
     min-height: 100vh;
 }
 .container > .content .heading {
@@ -97,10 +97,10 @@ body {
 
 /*LIST DROP DOWNS*/
 .sidebar1 {
-    width: 250px;
+    width: 100%;
     height: 100%;
     background: #293949;
-    position: absolute;
+    /*position: absolute;*/
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -124,7 +124,7 @@ body {
     color: #aeb2b7;
     text-decoration: none;
     display: block;
-    padding: 18px 0 18px 25px;
+    padding: 40px 8px 17px 24px;
     font-size: 12px;
     outline: 0;
     -webkit-transition: all 200ms ease-in;
@@ -289,6 +289,65 @@ h3{
 .Ndtwo{
      color: transparent;
  }
+@media only screen and (max-width: 600px) {
+    .container > .sidebar {
+        width: 100%;
+        height: auto;
+        background: #0094ff;
+    }
+    .sidebar1 {
+        width: 100%;
+        height: auto;
+        background: #293949;
+        /*position: absolute;*/
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        z-index: 100;
+    }
+    .container.-expanded > .content {
+        width: 100%;
+        margin-top: 48vh;
+    }
+    .btn.-info {
+        color: #fff;
+        background: transparent;
+        display: none;
+    }
+    .picParent {
+        background: #757575;
+        height: 69px;
+        margin-top: -22px;
+        padding-left: 0;
+        width: 56px;
+    }
+    form{
+        margin-bottom: 56px;
+        width: 88%;
+    }
+    .top-bar {
+        /*position: relative;*/
+        height: 112px;
+        padding: 15px 20px;
+        background-color: #fefefe;
+    }
+    h3{
+        margin-left: 4px;
+
+    }
+    .graphImg {
+        float: none;
+        margin-bottom: 16px;
+    }
+    .mapImg {
+        float: none;
+        margin-left: 0;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+}
 @media only screen and (max-width: 360px) {
     .container > .sidebar {
         width: 100%;
@@ -299,7 +358,7 @@ h3{
         width: 100%;
          height: auto;
         background: #293949;
-        position: absolute;
+        /*position: absolute;*/
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         -o-transition: all 0.3s ease-in-out;
@@ -328,7 +387,7 @@ h3{
         width: 88%;
     }
     .top-bar {
-        position: relative;
+        /*position: relative;*/
         height: 112px;
         padding: 15px 20px;
         background-color: #fefefe;
