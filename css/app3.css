@@ -107,6 +107,7 @@ nav ul li a{
 .nav__brandbar {
     background-color: #14465e;
     padding: 1.5rem;
+    color: #fff;
 }
 
 .nav__links {
@@ -125,6 +126,7 @@ nav ul li a{
     height: 4.5em;
     padding: 1em 1.5em 1.5em;
     border-bottom: 1px solid #dddbdc;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.16), 0 0 1px 0 rgba(0, 0, 0, 0.12);
 }
 
 .main-content {
@@ -191,7 +193,6 @@ nav ul li a{
     text-decoration: none;
     display: block;
     padding: 40px 8px 17px 24px;
-    font-size: 12px;
     outline: 0;
     -webkit-transition: all 200ms ease-in;
     -moz-transition: all 200ms ease-in;
@@ -237,6 +238,7 @@ nav ul li a{
     width: 20px;
     float: left;
     padding-left: 16px;
+    color: #e66e36;
 }
 .arrow.fa.fa-angle-right.pull-right {
     color: #fff;
@@ -300,4 +302,8 @@ h4{
     width: 80%;
     box-shadow: 4px 6px 9px 0 rgba(0, 0, 0, 0.16), 0 0 1px 0 rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+}
+.fa-angle-right:before {
+    content: "\f105";
+    color: #fff;
 }
