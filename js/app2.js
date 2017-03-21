@@ -1,3 +1,5 @@
-/**
- * Created by tune on 21/03/2017.
- */
+// LIST DROPDOWN
+$("#leftside-navigation .sub-menu > a").click(function(e) {
+    $("#leftside-navigation ul ul").slideUp(), $(this).next().is(":visible") || $(this).next().slideDown(),
+        e.stopPropagation()
+})
