@@ -74,27 +74,6 @@ nav ul li a{
 
 }
 
-/*nav > ul > li > a {*/
-
-    /*color: #ffffff;*/
-    /*padding-top: 30px;*/
-/*}*/
-/*nav > ul > li > a:hover {*/
-    /*color: #ffffff;*/
-/*}*/
-/*nav > ul > li.active a {*/
-    /*background: #00B5B5;*/
-/*}*/
-/*nav > ul > li a:hover,*/
-/*nav > ul > li:hover a {*/
-    /*background: #00B5B5;*/
-/*}*/
-/*nav li {*/
-    /*position: relative;*/
-    /*border-bottom: 1px solid #D4D4D4;*/
-
-/*}*/
-
 /*app2 css*/
 .nav {
     background-color: #257391;
@@ -142,7 +121,6 @@ nav ul li a{
     margin-left: 3em;
     margin-right: auto;
     margin-top: 4rem;
-    min-width: 800px;
 }
 
 .channel-list__table {
