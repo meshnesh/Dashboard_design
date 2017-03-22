@@ -194,7 +194,7 @@ nav ul li a{
     padding-left: 16px;
 }
 .sidebar1 #leftside-navigation ul li a i .fa-angle-left,
-.sidebar1 #leftside-navigation ul li a i .fa-angle-right {
+.sidebar1 #leftside-navigation ul li a i .fa-plus {
     padding-top: 3px;
 }
 .sidebar1 #leftside-navigation ul ul {
@@ -216,10 +216,10 @@ nav ul li a{
 .sidebar1 #leftside-navigation ul li a i {
     width: 20px;
     float: left;
-    padding-left: 16px;
+    padding-left: 4px;
     color: #e66e36;
 }
-.arrow.fa.fa-angle-right.pull-right {
+.fa.fa-plus.pull-right {
     color: #fff;
     float: right !important;
 }
@@ -294,8 +294,7 @@ h4{
     box-shadow: 4px 6px 9px 0 rgba(0, 0, 0, 0.16), 0 0 1px 0 rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
-.fa-angle-right:before {
-    content: "\f105";
+.fa-plus:before {
     color: #fff;
 }
 @media only screen and (max-width: 1024px) {
