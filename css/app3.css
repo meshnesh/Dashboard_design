@@ -317,6 +317,25 @@ h4{
     content: "\f105";
     color: #fff;
 }
+@media only screen and (max-width: 1024px) {
+    .btn {
+        width: 40%;
+    }
+    .profilePic {
+        width: 6%;
+        height: 72px;
+        margin-top: -16px;
+        padding: 8px;
+        background-color: #dddbdc;
+        margin-left: 96px;
+    }
+    .profileChild {
+        width: 56px;
+        /* margin-left: 12px; */
+        border-radius: 50%;
+        padding-top:8px;
+    }
+}
 @media only screen and (max-width: 770px) {
 
     .btn {
