@@ -7,14 +7,3 @@
         e.preventDefault();
     });
 })();
-
-
-function myfunc(div) {
-    var className = div.getAttribute("class");
-    if(className=="fa-angle-right") {
-        div.className = "active";
-    }
-    else{
-        div.className = "fa-angle-left";
-    }
-}

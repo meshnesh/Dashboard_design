@@ -251,26 +251,37 @@ nav ul li a{
 .iconFa{
     text-align: right;
     margin-top: 12px;
+    /*font-size: 24px;*/
 }
 .incoChild{
     width: 50%;
     float: left;
+    font-size: 24px;
+
+}
+.secondChild{
+    text-align: left;
+}
+.fa-cog{
+    padding-left: 56px;
 }
 .profilePic{
     width: 6%;
     height: 7.5vh;
     margin-top: -16px;
     padding: 8px;
-    background: #757575;
     background-color: #dddbdc;
     margin-left: 96px;
 }
 .profileChild{
     width: 56px;
     margin-left: 12px;
+    border-radius: 50%;
 }
 [type='search']{
     border-radius: 16px;
+    border: 0 solid #fefefe;
+    box-shadow: inset 1px 1px 4px rgba(10, 10, 10, 0.1);
 }
 h4{
     width: 87%;
