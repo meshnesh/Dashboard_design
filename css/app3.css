@@ -1,5 +1,5 @@
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
-@import url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css');
+/*@import url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css');*/
 *{
     margin:0;
     padding:0;
@@ -73,7 +73,12 @@ nav ul li a{
     transform:translate3d(200px,0,0);
 
 }
-
+.top-left{
+    float: left;
+}
+.top-right{
+    float: right;
+}
 /*app2 css*/
 .nav {
     background-color: #257391;
@@ -238,6 +243,7 @@ nav ul li a{
     width: 50%;
     float: left;
     font-size: 24px;
+    margin-top: -12px;
 
 }
 .secondChild{
@@ -255,7 +261,7 @@ nav ul li a{
 }
 .profileChild{
     width: 56px;
-    /*margin-left: 12px;*/
+    margin-left: 12px;
     border-radius: 50%;
 }
 [type='search']{
