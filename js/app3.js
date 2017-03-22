@@ -2,7 +2,7 @@ $(".nav-toggle-btn").click(function() {
     $(".fa-angle-left").toggle();
 });
 
-( function() {
+(function() {
     var mynav = $('body'),
         mybutton = mynav.find('.nav-toggle-btn');
 

@@ -252,7 +252,9 @@ nav ul li a{
 .iconFa{
     text-align: right;
     margin-top: 12px;
-    /*font-size: 24px;*/
+    font-size: 24px;
+    width: 8%;
+    margin-left: 8%;
 }
 .incoChild{
     width: 50%;
@@ -271,7 +273,7 @@ nav ul li a{
     margin-top: -16px;
     padding: 8px;
     background-color: #dddbdc;
-    margin-left: 96px;
+    margin-left: 64px;
 }
 .profileChild{
     width: 56px;
@@ -323,27 +325,27 @@ h4{
         width: 40%;
     }
     .profilePic {
-        width: 6%;
+        width: 8%;
         height: 72px;
         margin-top: -16px;
         padding: 8px;
         background-color: #dddbdc;
-        margin-left: 96px;
+        margin-left: 80px;
     }
     .profileChild {
         width: 56px;
         /* margin-left: 12px; */
         border-radius: 50%;
-        padding-top:8px;
+        margin-top: 2px;
     }
 }
 @media only screen and (max-width: 770px) {
 
     .btn {
-        width: 40%;
+        width: 56%;
     }
     .profilePic {
-        width: 6%;
+        width: 11%;
         height: 72px;
         margin-top: -16px;
         padding: 8px;
@@ -354,7 +356,7 @@ h4{
         width: 56px;
         /* margin-left: 12px; */
         border-radius: 50%;
-        padding-top:16px;
+        margin-top: 2px;
     }
 }
 @media only screen and (max-width: 600px) {
