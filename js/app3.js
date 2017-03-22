@@ -1,6 +1,6 @@
-$(".nav-toggle-btn").click(function() {
-    $(".fa-angle-left").toggle();
-});
+// $(".nav-toggle-btn").click(function() {
+//
+// });
 
 (function() {
     var mynav = $('body'),
@@ -10,6 +10,7 @@ $(".nav-toggle-btn").click(function() {
     mybutton.on('click', function(e) {
         mynav.toggleClass('active-nav');
         e.preventDefault();
+        $(".fa-angle-left").toggle();
     });
 })();
 
